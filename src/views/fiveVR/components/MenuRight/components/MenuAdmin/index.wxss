@@ -1,0 +1,94 @@
+.vr__admin {
+  height: 100%;
+  padding: 15px;
+}
+
+.vr__admin header {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffd04b;
+}
+
+.vr__admin__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.vr__admin__item__icons {
+  display: flex;
+}
+
+.vr__admin__item__sort {
+  margin-left: 20px;
+}
+
+.vr__admin__item__p {
+  cursor: pointer;
+}
+
+.vr__admin__edit {
+  color: #333;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.vr__admin__data {
+  height: calc(100vh - 165px - 50px);
+  overflow-y: auto;
+  padding-bottom: 30px;
+}
+
+.vr__admin__table {
+  margin-top: 20px;
+}
+
+.vr__admin__content {
+  margin-top: 30px;
+  padding: 15px;
+  color: red;
+}
+
+.vr__admin__content span {
+  font-weight: bold;
+}
+
+.vr__admin__shade {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.vr__admin__footer {
+  border-top: 1px solid #ddd;
+  text-align: right;
+  padding-top: 10px;
+}
+
+.vr__admin__footer__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vr__admin__video {
+  margin-bottom: 6px;
+  cursor: move;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vr__admin__video__container {
+  padding: 15px 60px 15px 60px;
+  margin-bottom: 50px;
+}
+
+.vr__admin__second {
+  display: flex;
+  align-items: center;
+}

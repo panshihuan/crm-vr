@@ -1,0 +1,39 @@
+.vr__axis {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &__section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 7px;
+    }
+    &__radio{
+        margin-bottom: 13px;
+        background: #eee;
+        padding: 6px;
+        border-radius: 20px;
+    }
+    &__signal{
+        color: #fff;
+        padding: 2px 6px;
+        border-radius: 4px;
+        margin-left: 6px;
+        background: rgb(59, 172, 168);
+    }
+}
+
+.vr__cursor{
+    &__slider{
+        &-container{
+            margin-top: 20px;
+        }
+        display: flex;
+        width: 100%;
+        align-items: center;
+        &__color{
+            width: 16px;
+            height: 16px;
+            border-radius: 50% 50%;
+            margin-right: 15px;
+        }
+    }
+}

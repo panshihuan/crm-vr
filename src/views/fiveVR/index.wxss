@@ -1,0 +1,182 @@
+.vr {
+  height: 100%;
+  width: 100%;
+  background: #545c64;
+}
+
+.vr__header {
+  height: 50px;
+}
+
+.vr__main {
+  height: calc(100vh - 50px);
+  margin: 0 330px 0 140px;
+  background-color: green;
+}
+
+.vr__center {
+  float: left;
+  width: 100%;
+}
+
+.vr__left {
+  position: absolute;
+  width: 140px;
+  height: calc(100vh - 50px);
+  left: 0;
+  top: 50px;
+}
+
+.vr__right {
+  position: absolute;
+  width: 330px;
+  height: calc(100vh - 50px);
+  right: 0;
+  top: 50px;
+  overflow-y: hidden;
+}
+
+.vr__five {
+  position: relative;
+}
+
+.appCVS {
+  height: calc(100vh - 50px);
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  background: #333;
+}
+
+.floorplanWrapper {
+  position: absolute;
+  right: 5px;
+  top: 4em;
+  z-index: 3;
+  width: 6em;
+  height: 8em;
+  border-radius: 0.25em;
+  background-image: linear-gradient(180deg, rgba(29, 31, 36, 0), rgba(29, 31, 36, 0.2));
+  pointer-events: all;
+}
+
+.logo1 {
+  position: absolute;
+  left: 5px;
+  bottom: 5em;
+  width: 6em;
+  height: 1.8em;
+  opacity: 0.3;
+  display: none;
+}
+
+.topview_floorplan_wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.topview_floorplan {
+  width: 60%;
+  height: 60%;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bg_music_btn {
+  position: fixed;
+  z-index: 11;
+  right: 1rem;
+  top: 1.2rem;
+  font-size: 14px;
+  height: 2.6rem;
+  width: 2.6rem;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bg_music_btn.playing {
+  animation: rotate360 8s linear infinite;
+}
+
+.roomsWrap {
+  position: fixed;
+  left: 0.5rem;
+  bottom: 5.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-size: 14px;
+  border-radius: 0.5rem;
+}
+
+.roomsWrap .close {
+  display: none;
+}
+
+.roomsWrap > a {
+  display: inline-block;
+  width: 6rem;
+  height: 0;
+  padding-top: 4rem;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.roomsWrap > a.current {
+  border-color: #4e84e6;
+}
+
+@media screen and (min-width: 768px) {
+  .floorplanWrapper {
+    width: 120px;
+    height: 160px;
+  }
+  .roomsWrap {
+    flex-direction: row;
+    padding: 2rem;
+    left: 25%;
+    top: 50%;
+    width: 50%;
+    bottom: auto;
+    flex-wrap: wrap;
+    max-width: 768px;
+  }
+  .roomsWrap .close {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .roomsWrap > a {
+    width: 120px;
+    padding-top: 80px;
+    font-size: 14px;
+    margin: 0 1rem 1rem 0;
+  }
+}

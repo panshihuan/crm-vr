@@ -1,0 +1,10 @@
+@import '../styles/common.scss';
+@import '../styles/mixin.scss';
+@import '../styles/function.scss';
+
+.tab{
+    &__icon{
+        color: $mainColor;
+        // @include px2rem(width, 17px);
+    }
+}

@@ -1,0 +1,115 @@
+.vr__tag {
+  padding: 0 15px;
+}
+
+.vr__tag__list__header {
+  font-size: 12px;
+  color: #eee;
+  background: rgba(230, 235, 247, 0.3);
+  padding: 0 8px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.vr__tag__list__item {
+  position: relative;
+  display: flex;
+  border-top: 1px solid #f3f6fb;
+  min-height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 6px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.vr__tag__list__acatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #f8f8f9;
+  background-size: cover;
+  position: relative;
+}
+
+.vr__tag__list__content {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  justify-content: center;
+  margin-left: 15px;
+  flex: 1;
+  overflow: hidden;
+  color: #333;
+}
+
+.vr__tag__list__title {
+  font-size: 14px;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+
+.vr__tag__list__action {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+}
+
+.vr__tag__media {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.vr__tag__adds {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.vr__tag__adds__btn {
+  border: 1px dashed #fff;
+  color: #fff;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: 105px;
+  min-width: 78px;
+  font-size: 12px;
+  line-height: 1;
+  height: 40px;
+  text-align: center;
+  border-radius: 6px 6px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.vr__tag__edit__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.vr__tag__edit__title__txt {
+  font-size: 18px;
+}
+
+.vr__tag__submit {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  width: 315px;
+  display: flex;
+  justify-content: space-around;
+}

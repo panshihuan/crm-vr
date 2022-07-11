@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/*项目常用变量值*/
+.segmentation {
+  height: 0.267rem;
+  background-color: #eee;
+}
+
+.header__btns {
+  padding: 15px 15px 0 15px;
+}
+
+.header__btns .van-tag {
+  margin-right: 14px;
+}
+
+.list-total {
+  font-size: 12px;
+  text-align: right;
+  color: #666;
+  padding-right: 6px;
+}
+
+.field--block {
+  display: block !important;
+}
+
+.van-image-preview {
+  z-index: 2013111111 !important;
+}
+
+.van-image-preview__overlay {
+  z-index: 201311111 !important;
+}
+
+.vr__tips {
+  color: yellow;
+  font-size: 12px;
+  padding-top: 3px;
+}
+
+.vr__tips:before {
+  content: '*';
+  color: yellow;
+  margin-right: 4px;
+  display: inline;
+}

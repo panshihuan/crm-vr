@@ -1,0 +1,113 @@
+@keyframes wave {
+    0% {
+      background-position: 0 0;
+      transform: rotate(0deg);
+    }
+    100% {
+      background-position: 100% 0;
+      transform: rotate(360deg);
+    }
+  }
+  .popWrap {
+    cursor: pointer;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: visible;
+    color: #fff;
+    // text-shadow: 0 1px 4px rgb(0 0 0 / 25%);
+    z-index: 1;
+    i.dot {
+      width: 36px;
+      height: 36px;
+      position: absolute;
+      left: -18px;
+      top: -18px;
+      overflow: hidden;
+      border-radius: 100%;
+      z-index: 2;
+      background-image: url(../../assets/img/wave.png);
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      animation: wave 2s steps(33) infinite;
+      &:after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        overflow: hidden;
+        background: red;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        border: 2px solid rgba(255, 255, 255, 0.7);
+      }
+    }
+    i.line1 {
+      position: absolute;
+      width: 1px;
+      height: 30px;
+      background: #fff;
+      transform: rotate(45deg);
+      transform-origin: left bottom;
+      left: 0;
+      bottom: 0;
+    }
+    i.line2 {
+      position: absolute;
+      width: 32vw;
+      height: 1px;
+      background: linear-gradient(90deg, #fff 0, hsla(0, 0%, 100%, 0.1));
+      left: 21px;
+      bottom: 20px;
+    }
+    .tit1 {
+      width: 32vw;
+      position: absolute;
+      left: 20px;
+      bottom: 25px;
+      // white-space: nowrap;
+      font-size: 14px;
+      font-weight: bold;
+      i.iconfont {
+        font-size: 20px;
+        font-weight: normal;
+      }
+      .face {
+        width: 100%;
+        padding-top: 60%;
+        height: 0;
+        background-size: cover;
+        display: flex;
+        border-radius: 5px;
+        .icon {
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          display: inline-flex;
+          font-size: 20px;
+          color: rgba(255, 255, 255, 0.9);
+          background: rgba(0, 0, 0, 0.6);
+          margin-top: -55%;
+        }
+      }
+    }
+    .tit2 {
+      position: absolute;
+      white-space: nowrap;
+      left: 20px;
+      top: -15px;
+      font-size: 12px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .popWrap {
+      i.line2 {
+        width: 100px;
+      }
+      .tit1 {
+        width: 120px;
+      }
+    }
+  }

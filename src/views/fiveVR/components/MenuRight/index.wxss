@@ -1,0 +1,6 @@
+.vr__edit {
+  height: 100%;
+  border-left: 1px solid #fff;
+  color: #fff;
+  overflow-y: auto;
+}

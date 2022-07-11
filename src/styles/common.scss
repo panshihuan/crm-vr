@@ -1,0 +1,50 @@
+/*项目常用变量值*/
+
+$mainColor: #F02C38; // 主题色
+$assitColor: #007AFF; // 辅助色(组件层, 确定按钮等)
+$bgColor: #F8F8F8; // 背景色
+$lineColor: #F8F8F8; // 线条颜色
+$defaulFontColor: #333333; // 默认字体颜色
+$defaultFontSize: 0.37rem; // 默认字体大小
+
+.segmentation {
+    height: 0.267rem;
+    background-color: #eee;
+}
+
+.header__btns{
+    padding: 15px 15px 0 15px;
+    .van-tag{
+        margin-right: 14px;
+    }
+}
+.list-total{
+    font-size: 12px;
+    text-align:right;
+    color: #666;
+    padding-right: 6px;
+}
+.field--block{
+    display: block!important;
+}
+
+.van-image-preview{
+    z-index: 2013111111!important;
+}
+.van-image-preview__overlay{
+    z-index: 201311111!important;
+}
+
+.vr{
+    &__tips{
+        color: yellow;
+        font-size: 12px;
+        padding-top: 3px;
+        &:before{
+            content: '*';
+            color: yellow;
+            margin-right: 4px;
+            display: inline;
+        }
+    }
+}

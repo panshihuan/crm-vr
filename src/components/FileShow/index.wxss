@@ -1,0 +1,32 @@
+.fileshow__imgs {
+  overflow: hidden;
+}
+
+.fileshow__img {
+  float: left;
+  max-width: 150px;
+  max-height: 200px;
+  margin: 1px 30px 25px 0;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid yellow;
+  padding: 6px;
+}
+
+.fileshow__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.fileshow__file {
+  margin-bottom: 10px;
+}
+
+.fileshow__file a {
+  color: #36a3f7;
+  cursor: pointer;
+}
+
+.fileshow__file a:hover {
+  color: #0461a9;
+}

@@ -1,0 +1,44 @@
+@keyframes wave {
+    0% {
+        background-position: 0 0;
+        // transform: rotate(0deg);
+    }
+    100% {
+        background-position: 100% 0;
+        // transform: rotate(360deg);
+    }
+}
+.dotWrap {
+    cursor: pointer;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    i.dot {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        left: -18px;
+        top: -18px;
+        overflow: hidden;
+        border-radius: 100%;
+        z-index: 2;
+        background-image: url(../../assets/img/wave.png);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        animation: wave 2s steps(33) infinite;
+        &:after {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            overflow: hidden;
+            background: #4e84e6;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            border: 2px solid rgba(255, 255, 255, 0.7);
+        }
+    }
+}
